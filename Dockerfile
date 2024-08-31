@@ -31,8 +31,6 @@ RUN apt-get update && apt-get install -y unzip graphviz && \
 # 作業ディレクトリを設定
 WORKDIR /app
 
-VOLUME /app
-
 # 依存関係をコピー
 COPY ./app/requirements.txt .
 
